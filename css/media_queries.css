@@ -1,0 +1,135 @@
+.hidden{
+    display: none;
+}
+
+/*modile devices max-width 480px*/
+
+@media (max-width:480px){
+    header > *{
+        margin: 0;
+
+    }
+    .nav_items,.menu-btn{
+        display: none;
+    }
+    .hero-container{
+        flex-direction: column;
+        height: auto;
+    }
+    img{
+        width: 100%;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    .hero-text h1.heading, .school-section h2.heading, .hero-text p {
+        width: 100%;;
+    }
+    .btn-groupp,.btn,.outline-btn{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container{
+        padding-top: 15px;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-image, .about-info {
+         width: 100%;
+    }
+    .about-info h2.heading, .class-content .heading {
+     width: 100%;
+    }
+    .why-us-box{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    .icon-text{
+        height: auto;
+    }
+    h3{
+        line-height: 1.5;
+    }
+    .icon{
+        flex-shrink: 0;
+    }
+    .school-section {
+        flex-direction: column;
+    }
+    .school-section p {
+        width: 100%;
+    }
+    .class-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .newsletter .content {
+        padding: 15px;
+    }
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+
+/* tablet devices min width 481px and max width 768 */
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .nav_items{
+        display: none;
+    }
+    header > *{
+        margin: 0;
+    }
+    .hero-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .about-section{
+        flex-direction: column;
+        align-items: start;
+    }
+    .school-section {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .class-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        padding: 80px 15px;
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* laptop or desktop min width 769px and max-width 1024px */
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .hero-image{
+        flex-shrink: 0;
+    }
+   .hero-text h1.heading,.school-section h2.heading,.hero-text p,.about-image,.about-info,.about-info h2.heading,.school-section,.text-content p,.classes-section h2.heading{
+        width: 100%;
+    }
+    .about-image img{
+        width: 90%;
+    }
+    .school-section{
+        flex-direction: row;
+        align-items: center;
+    }
+    .school-section .text-content{
+        width: 60%;
+    }
+    .class-cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
